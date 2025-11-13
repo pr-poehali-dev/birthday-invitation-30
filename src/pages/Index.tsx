@@ -46,6 +46,42 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8 md:py-16 relative z-10">
         <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
           <div className="text-center space-y-4 md:space-y-6 animate-fade-in">
+            <div className="relative inline-block mb-8 group">
+              <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
+                <img
+                  src="/placeholder.svg"
+                  alt="Детское фото"
+                  className="w-full h-full rounded-full object-cover border-4 border-primary/50 shadow-2xl shadow-primary/30 transition-transform group-hover:scale-105"
+                />
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 group-hover:animate-party-hat-bounce">
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 animate-wiggle">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary via-secondary to-accent rounded-full opacity-20 blur-xl"></div>
+                    <svg
+                      viewBox="0 0 100 100"
+                      className="w-full h-full drop-shadow-2xl"
+                      style={{ filter: 'drop-shadow(0 0 10px rgba(255, 51, 153, 0.8))' }}
+                    >
+                      <defs>
+                        <linearGradient id="hatGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style={{ stopColor: '#ff3399', stopOpacity: 1 }} />
+                          <stop offset="50%" style={{ stopColor: '#00ffff', stopOpacity: 1 }} />
+                          <stop offset="100%" style={{ stopColor: '#cc00ff', stopOpacity: 1 }} />
+                        </linearGradient>
+                      </defs>
+                      <polygon
+                        points="50,10 20,70 80,70"
+                        fill="url(#hatGradient)"
+                        stroke="#ffffff"
+                        strokeWidth="2"
+                      />
+                      <ellipse cx="50" cy="70" rx="32" ry="8" fill="#ff3399" stroke="#ffffff" strokeWidth="2" />
+                      <circle cx="50" cy="10" r="6" fill="#ffff00" className="animate-neon-pulse" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <h2 className="text-3xl md:text-5xl font-bold text-muted-foreground">
               Мне 30...
             </h2>

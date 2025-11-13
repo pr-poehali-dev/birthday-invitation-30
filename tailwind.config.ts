@@ -114,6 +114,14 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
+				},
+				'party-hat-bounce': {
+					'0%, 100%': { transform: 'translateY(0) rotate(-15deg)' },
+					'50%': { transform: 'translateY(-8px) rotate(-10deg)' }
 				}
 			},
 			animation: {
@@ -124,7 +132,9 @@ export default {
 				'wave': 'wave 8s linear infinite',
 				'fade-in': 'fade-in 0.8s ease-out',
 				'slide-up': 'slide-up 0.8s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'party-hat-bounce': 'party-hat-bounce 0.6s ease-out'
 			}
 		}
 	},
