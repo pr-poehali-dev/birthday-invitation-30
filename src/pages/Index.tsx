@@ -49,7 +49,7 @@ const Index = () => {
             <div className="relative inline-block mb-8 group">
               <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
                 <img
-                  src="/placeholder.svg"
+                  src="https://cdn.poehali.dev/files/96ea4a81-4b07-4f91-8c34-d133e55963b4.jpg"
                   alt="Детское фото"
                   className="w-full h-full rounded-full object-cover border-4 border-primary/50 shadow-2xl shadow-primary/30 transition-transform group-hover:scale-105"
                 />
