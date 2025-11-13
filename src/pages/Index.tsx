@@ -218,17 +218,7 @@ const Index = () => {
             </Card>
           )}
 
-          <div className="space-y-4 animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <Card className="p-6 bg-gradient-to-r from-primary/20 to-secondary/20 border-2 border-primary/40 backdrop-blur-sm">
-              <div className="flex items-center gap-4">
-                <div className="text-4xl">🍹</div>
-                <div>
-                  <p className="text-xl font-bold text-primary">Первые 30 минут - бар за мой счет!</p>
-                  <p className="text-sm text-foreground/70">Успей сделать заказ 😉</p>
-                </div>
-              </div>
-            </Card>
-
+          <div className="animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <Card className="p-6 bg-gradient-to-r from-secondary/20 to-accent/20 border-2 border-secondary/40 backdrop-blur-sm">
               <div className="flex items-center gap-4">
                 <div className="text-4xl">✨</div>
