@@ -85,31 +85,46 @@ export default {
 						height: '0'
 					}
 				},
-				'float': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-20px)' }
+				'neon-pulse': {
+					'0%, 100%': { 
+						textShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor',
+						filter: 'brightness(1)'
+					},
+					'50%': { 
+						textShadow: '0 0 20px currentColor, 0 0 40px currentColor, 0 0 60px currentColor',
+						filter: 'brightness(1.3)'
+					}
 				},
-				'confetti': {
-					'0%': { transform: 'translateY(-100vh) rotate(0deg)', opacity: '1' },
-					'100%': { transform: 'translateY(100vh) rotate(720deg)', opacity: '0' }
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 51, 153, 0.5), 0 0 40px rgba(0, 255, 255, 0.3)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 51, 153, 0.8), 0 0 80px rgba(0, 255, 255, 0.5)' }
+				},
+				'wave': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
 				},
 				'fade-in': {
 					'0%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
-				'bounce-in': {
-					'0%': { transform: 'scale(0)', opacity: '0' },
-					'50%': { transform: 'scale(1.1)' },
-					'100%': { transform: 'scale(1)', opacity: '1' }
+				'slide-up': {
+					'0%': { opacity: '0', transform: 'translateY(40px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 3s ease-in-out infinite',
-				'confetti': 'confetti 3s linear infinite',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'wave': 'wave 8s linear infinite',
 				'fade-in': 'fade-in 0.8s ease-out',
-				'bounce-in': 'bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+				'slide-up': 'slide-up 0.8s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
